@@ -1,0 +1,1334 @@
+ 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  margin: 0;
+  padding: 0;
+   background-image: https://media0.giphy.com/media/YmzO3P2e4qYkitoVcF/200w.webp?cid=ecf05e47mlezbjv30nc1rac5eswc321jve90aj5ag4sshgyq&ep=v1_gifs_search&rid=200w.webp&ct=g ;
+}
+
+nav {
+ background-color:#040a46 /*#f1f1f1*/;
+/*background-image: url(https://cdn.dribbble.com/users/1770290/screenshots/6183149/bg_79.gif );*/
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  padding:  40px;
+  text-decoration: none;
+  color: #f5f2f2;
+}
+
+.section {
+  height: 100vh;
+  padding: 50px;
+}
+
+.section h1 {
+  margin-top: 0;
+}
+ 
+html,body {
+    height: 100%;
+    width: 100%;
+}
+#joke{
+    background-color: #f5f5f5;
+    color: #333;
+    font-size: 1.5em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+#joke-container {
+  /*  width: 300px;
+    height: 200px;
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 16px;*/
+
+     background-color: #f5f5f5;
+    color: #333;
+    font-size: 1.5em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px;
+    text-align: center;
+    width: 100%;  
+}
+#french-container {
+/*  margin: 20px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;*/
+  background-color: #f5f5f5;
+    color: #333;
+    font-size: 1.5em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+
+}
+#german-container {
+    background-color: #f5f5f5;
+    color: #333;
+    font-size: 1.5em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+
+}
+#japanese-container{
+    background-color: #f5f5f5;
+    color: #333;
+    font-size: 1.5em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+
+}   
+#chinese-container{
+    background-color: #f5f5f5;
+    color: #333;
+    font-size: 1.5em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}  
+.note-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.note {
+  white-space: nowrap;
+  display: inline-block;
+  animation: scroll 17s linear infinite;
+  font-size: 22px;
+  color: red;
+}
+
+.note-content {
+  padding-right: 90px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+/* like dislike comment*/
+
+.rating-buttons {
+  margin-top:   70px;
+}
+
+.like-button,
+.dislike-button,
+.comment-button {
+  
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 46px;
+  margin-right: -319px;
+   
+  align-items: center;
+  margin-left: 414px;
+}
+
+ 
+
+.like-button:focus,
+.dislike-button:focus,
+.comment-input:focus {
+  outline: none;
+}
+
+.like-icon,
+.dislike-icon {
+  height: 20px;
+  margin-right: 5px;
+}
+
+.like-count,
+.dislike-count {
+  margin-left: 5px;
+}
+
+.comment-section {
+  margin-top: 10px;
+}
+
+.comment-input {
+  padding: 5px;
+  width: 300px;
+  margin-right: 10px;
+}
+
+.comment-button {
+  margin-top: 5px;
+  margin-left: 33px;
+}
+
+.comments-container {
+  margin-top: 10px;
+}
+
+.comment-container {
+  margin-bottom: 5px;
+}
+
+/*footer*/
+footer {
+  background-color:   #040a46;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo img {
+  max-width: 100px;
+  height: auto;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.footer-links a:hover {
+  color: #f2f2f2;
+}
+
+.footer-social img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  margin: 0;
+}
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+   <nav style="height: 98px;">
+    <ul>
+      <li><a href="#home">en-English </a></li>
+      <li><a href="#about">es-Spanish </a></li>
+      <li><a href="#services">fr-French </a></li>
+      <li><a href="#contact">de-German </a></li>
+      <li><a href="#feedback">ja-Japanese</a></li>
+      <li><a href="#rate">chi-chinese</a></li>
+       
+    </ul>
+    <label  class="logo" ><img src="   "  style="height: 88px; right: 55px; position:absolute ; top: 7px; "></label>
+  </nav>
+
+
+  <div class="note-container">
+    <div class="note">
+        <span class="note-content">Note:-</span>
+      <span class="note-content">Kindly reload the page for new jokes. </span>
+      <span class="note-content">Kindly reload the page for new jokes. </span>
+      <span class="note-content">Kindly reload the page for new jokes. </span>
+      <span class="note-content">Kindly reload the page for new jokes. </span>
+      <span class="note-content">Kindly reload the page for new jokes. </span>
+    </div>
+  </div>
+
+  <div id="home" class="section"  style="background-image: url(https://cdn.dribbble.com/users/1770290/screenshots/6164788/bg_76.gif );background-repeat: no-repeat; background-size: cover;">
+    <h1>Welcome to the English Section</h1>
+    <!-- Content for the Home section goes here -->
+
+
+    <!--here jokes section for english-->
+    <div id="joke">this is sample joke</div>
+    
+
+    <script>
+
+        let myjokes =   [
+        {
+            "category": "Programming",
+            "type": "single",
+            "joke": "ASCII silly question, get a silly ANSI.",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "id": 25,
+            "safe": true,
+            "lang": "en"
+        },
+        {
+            "category": "Programming",
+            "type": "single",
+            "joke": "// This line doesn't actually do anything, but the code stops working when I delete it.",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "id": 12,
+            "safe": true,
+            "lang": "en"
+        },
+        {
+            "category": "Programming",
+            "type": "single",
+            "joke": "Two C strings walk into a bar.\nThe bartender asks \"What can I get ya?\"\nThe first string says \"I'll have a gin and tonic.\"\nThe second string thinks for a minute, then says \"I'll take a tequila sunriseJF()#$JF(#)$(@J#()$@#())!*FNIN!OBN134ufh1ui34hf9813f8h8384h981h3984h5F!##@\"\nThe first string apologizes, \"You'll have to excuse my friend, he's not null-terminated.\"",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "id": 28,
+            "safe": true,
+            "lang": "en"
+        },
+        {
+            "category": "Programming",
+            "type": "single",
+            "joke": "A SQL statement walks into a bar and sees two tables.\nIt approaches, and asks \"may I join you?\"",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "id": 5,
+            "safe": true,
+            "lang": "en"
+        },
+        {
+            "category": "Programming",
+            "type": "single",
+            "joke": "Debugging is like being the detective in a crime movie where you're also the murderer at the same time.",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "id": 42,
+            "safe": true,
+            "lang": "en"
+        },
+        {
+            "category": "Programming",
+            "type": "single",
+            "joke": "Today I learned that changing random stuff until your program works is \"hacky\" and a \"bad coding practice\" but if you do it fast enough it's \"Machine Learning\" and pays 4x your current salary.",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "id": 33,
+            "safe": true,
+            "lang": "en"
+        },
+        {
+            "category": "Programming",
+            "type": "single",
+            "joke": "Algorithm: A word used by programmers when they don't want to explain how their code works.",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "id": 51,
+            "safe": true,
+            "lang": "en"
+        },
+        {
+            "category": "Programming",
+            "type": "single",
+            "joke": "\"Knock, knock.\"\n\"Who's there?\"\n\n[very long pause]\n\n\"Java.\"",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "id": 36,
+            "safe": true,
+            "lang": "en"
+        },
+        {
+            "category": "Programming",
+            "type": "single",
+            "joke": "Your mama's so FAT she can't save files bigger than 4GB.",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": true
+            },
+            "id": 9,
+            "safe": false,
+            "lang": "en"
+        },
+        {
+            "category": "Programming",
+            "type": "single",
+            "joke": "I have a joke about Stack Overflow, but you would say it's a duplicate.",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "safe": true,
+            "id": 301,
+            "lang": "en"
+        },
+
+        {
+            "category": "Dark",
+            "type": "single",
+            "joke": "I'll never forget my Granddad's last words to me just before he died. \"Are you still holding the ladder?\"",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "id": 208,
+            "safe": false,
+            "lang": "en"
+        },
+        {
+            "category": "Dark",
+            "type": "single",
+            "joke": "I was going to tell a dead baby joke. But I decided to abort.",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": true
+            },
+            "id": 207,
+            "safe": false,
+            "lang": "en"
+        },
+        {
+            "category": "Pun",
+            "type": "single",
+            "joke": "I was struggling to figure out how lightning works, but then it struck me.",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "id": 220,
+            "safe": true,
+            "lang": "en"
+        },
+        {
+            "category": "Misc",
+            "type": "single",
+            "joke": "Yo mama is so old, she knew Burger King while he was still a prince.",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "safe": true,
+            "id": 306,
+            "lang": "en"
+        },
+        {
+            "category": "Misc",
+            "type": "single",
+            "joke": "My husband and I were happy for 20 years. And then we met.",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "safe": true,
+            "id": 273,
+            "lang": "en"
+        },
+        {
+            "category": "Pun",
+            "type": "single",
+            "joke": "A horse walks into a bar.\n\"Hey\", the Bartender says.\n\"Sure\", the horse replies.",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "id": 74,
+            "safe": true,
+            "lang": "en"
+        },
+        {
+            "category": "Dark",
+            "type": "single",
+            "joke": "Hey girl are you a school? Because I want to shoot some kids up inside of you.",
+            "flags": {
+                "nsfw": true,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": true
+            },
+            "safe": false,
+            "id": 269,
+            "lang": "en"
+        },
+        {
+            "category": "Misc",
+            "type": "single",
+            "joke": "My parents raised me as an only child, which really annoyed my younger brother.",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "id": 235,
+            "safe": true,
+            "lang": "en"
+        },
+        {
+            "category": "Pun",
+            "type": "single",
+            "joke": "I bought some shoes from a drug dealer. I don't know what he laced them with, but I was tripping all day!",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "id": 204,
+            "safe": false,
+            "lang": "en"
+        },
+        {
+            "category": "Dark",
+            "type": "single",
+            "joke": "My grandfather says I'm too reliant on technology.\nI called him a hypocrite and unplugged his life support.",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "id": 178,
+            "safe": false,
+            "lang": "en"
+        }
+
+
+
+
+
+
+
+    ]
+
+
+    let index = Math.floor(Math.random() * (myjokes.length -1))
+   console.log(index)
+    joke.innerHTML = myjokes[index].joke
+    </script>
+
+
+      <!--like dislike comment section-->
+
+      <div class="rating-buttons" style="display: flex; margin-top: 12px;">
+        <button class="like-button" onclick="toggleLike(this)">
+          <img src="like.png" alt="Like" class="like-icon"  style="height: auto;">
+          <span class="like-count">0</span>
+        </button> 
+        <button class="dislike-button" onclick="toggleDislike(this)">
+          <img src="dislike.png" alt="Dislike" class="dislike-icon" style="height:auto ;">
+          <span class="dislike-count">0</span>
+        </button>
+      
+      </div>
+      <div class="comment-section" style="margin-left: 33px;">
+        <input type="text" class="comment-input" placeholder="Add a comment...">
+        <button class="comment-button" onclick="addComment(this)">
+          Add Comment
+        </button>
+        <div class="comments-container">
+          <!-- Comments will be dynamically added here -->
+        </div>
+      </div>
+    </div>
+    
+    <script>
+  function toggleLike(button) {
+    var countElement = button.querySelector(".like-count");
+    var count = parseInt(countElement.textContent);
+  
+    if (button.classList.contains("liked")) {
+      button.classList.remove("liked");
+      count--;
+    } else {
+      button.classList.add("liked");
+      count++;
+    }
+  
+    countElement.textContent = count;
+  }
+  
+  function toggleDislike(button) {
+    var countElement = button.querySelector(".dislike-count");
+    var count = parseInt(countElement.textContent);
+  
+    if (button.classList.contains("disliked")) {
+      button.classList.remove("disliked");
+      count--;
+    } else {
+      button.classList.add("disliked");
+      count++;
+    }
+  
+    countElement.textContent = count;
+  }
+  
+  function addComment(button) {
+    var joke = button.parentElement.parentElement;
+    var commentInput = joke.querySelector(".comment-input");
+    var comment = commentInput.value.trim();
+  
+    if (comment !== "") {
+      var commentContainer = document.createElement("div");
+      commentContainer.classList.add("comment-container");
+      commentContainer.textContent = comment;
+  
+      var commentsContainer = joke.querySelector(".comments-container");
+      commentsContainer.appendChild(commentContainer);
+  
+      commentInput.value = "";
+    }
+  }
+  
+  
+    </script>
+  
+
+
+
+  </div>
+  <br>
+
+  <div id="about" class="section"  style="background-image: url(https://cdn.dribbble.com/users/1770290/screenshots/6183149/bg_79.gif );background-repeat: no-repeat; background-size: cover;">
+    <h1>Welcome to the  Spanish Section </h1>
+    <!-- Content for the About section goes here -->
+
+ 
+    
+ <!--jokes in spanish-->
+ <div id="joke-container"></div>
+ <script>
+const jokes = [
+    "¿Qué le dice un jardinero a otro? ¡Nos vemos cuando podamos!",
+    "¿Cómo se llama el campeón de buceo japonés? Tokofondo. ",
+    "¿Qué hace una abeja en el gimnasio? ¡Zum-ba!",
+    "¿Por qué estás hablando con esas zapatillas? Porque pone Converse.",
+    "¿Qué le dice una iguana a otra iguana? Somos iguanitas.",
+    "¿Qué hace una abeja en el gimnasio? ¡Zum-ba!",
+    "¿Qué hace una abeja en el gimnasio? ¡Zum-ba!"
+];
+
+function getRandomJoke() {
+    const randomIndex = Math.floor(Math.random() * jokes.length);
+    return jokes[randomIndex];
+}
+
+function displayJoke() {
+    const jokeContainer = document.getElementById('joke-container');
+    const joke = getRandomJoke();
+    jokeContainer.innerText = joke;
+}
+
+displayJoke();
+
+ </script>
+
+ <!--like dislike comment section-->
+
+ <div class="rating-buttons" style="display: flex; margin-top: 12px;">
+  <button class="like-button" onclick="toggleLike(this)">
+    <img src="like.png" alt="Like" class="like-icon"  style="height: auto;">
+    <span class="like-count">0</span>
+  </button> 
+  <button class="dislike-button" onclick="toggleDislike(this)">
+    <img src="dislike.png" alt="Dislike" class="dislike-icon" style="height:auto ;">
+    <span class="dislike-count">0</span>
+  </button>
+
+</div>
+<div class="comment-section" style="margin-left: 33px;">
+  <input type="text" class="comment-input" placeholder="Add a comment...">
+  <button class="comment-button" onclick="addComment(this)">
+    Add Comment
+  </button>
+  <div class="comments-container">
+    <!-- Comments will be dynamically added here -->
+  </div>
+</div>
+</div>
+
+<script>
+function toggleLike(button) {
+var countElement = button.querySelector(".like-count");
+var count = parseInt(countElement.textContent);
+
+if (button.classList.contains("liked")) {
+button.classList.remove("liked");
+count--;
+} else {
+button.classList.add("liked");
+count++;
+}
+
+countElement.textContent = count;
+}
+
+function toggleDislike(button) {
+var countElement = button.querySelector(".dislike-count");
+var count = parseInt(countElement.textContent);
+
+if (button.classList.contains("disliked")) {
+button.classList.remove("disliked");
+count--;
+} else {
+button.classList.add("disliked");
+count++;
+}
+
+countElement.textContent = count;
+}
+
+function addComment(button) {
+var joke = button.parentElement.parentElement;
+var commentInput = joke.querySelector(".comment-input");
+var comment = commentInput.value.trim();
+
+if (comment !== "") {
+var commentContainer = document.createElement("div");
+commentContainer.classList.add("comment-container");
+commentContainer.textContent = comment;
+
+var commentsContainer = joke.querySelector(".comments-container");
+commentsContainer.appendChild(commentContainer);
+
+commentInput.value = "";
+}
+}
+
+
+</script>
+
+
+
+
+  </div>
+<br>
+  <div id="services" class="section"  style="background-image: url(https://cdn.dribbble.com/users/1770290/screenshots/6220590/bg_82.gif );background-repeat: no-repeat; background-size: cover;">
+    <h1>Welcome to the french  Section </h1>
+    <!-- Content for the Services section goes here -->
+    <div id="french-container"></div>
+<script>
+const game = [
+  "Pourquoi les plongeurs plongent-ils toujours en arrière et jamais en avant ? Parce que sinon ils tombent dans le bateau !",
+  "Pourquoi les plongeurs plongent-ils toujours en arrière et jamais en avant ? Parce que sinon ils tombent dans l'eau !",
+  "Pourquoi est-ce que Napoléon n'a jamais déménagé ? Parce qu'il déteste Waterloo !",
+  "Pourquoi les plongeurs plongent-ils toujours en arrière et jamais en avant ? Parce que sinon ils tombent dans l'eau !",
+  "Pourquoi est-ce que Napoléon n'a jamais déménagé ? Parce qu'il déteste Waterloo !"
+];
+
+// Function to display a random joke
+function displaygame() {
+  const frenchContainer = document.getElementById('french-container');
+  const randomIndex = Math.floor(Math.random() * game.length);
+  const randomgame = game[randomIndex];
+
+  frenchContainer.textContent = randomgame;
+}
+
+// Display a random joke initially
+displaygame();
+
+
+</script>
+
+
+ <!--like dislike comment section-->
+
+ <div class="rating-buttons" style="display: flex; margin-top: 12px;">
+  <button class="like-button" onclick="toggleLike(this)">
+    <img src="like.png" alt="Like" class="like-icon"  style="height: auto;">
+    <span class="like-count">0</span>
+  </button> 
+  <button class="dislike-button" onclick="toggleDislike(this)">
+    <img src="dislike.png" alt="Dislike" class="dislike-icon" style="height:auto ;">
+    <span class="dislike-count">0</span>
+  </button>
+
+</div>
+<div class="comment-section" style="margin-left: 33px;">
+  <input type="text" class="comment-input" placeholder="Add a comment...">
+  <button class="comment-button" onclick="addComment(this)">
+    Add Comment
+  </button>
+  <div class="comments-container">
+    <!-- Comments will be dynamically added here -->
+  </div>
+</div>
+</div>
+
+<script>
+function toggleLike(button) {
+var countElement = button.querySelector(".like-count");
+var count = parseInt(countElement.textContent);
+
+if (button.classList.contains("liked")) {
+button.classList.remove("liked");
+count--;
+} else {
+button.classList.add("liked");
+count++;
+}
+
+countElement.textContent = count;
+}
+
+function toggleDislike(button) {
+var countElement = button.querySelector(".dislike-count");
+var count = parseInt(countElement.textContent);
+
+if (button.classList.contains("disliked")) {
+button.classList.remove("disliked");
+count--;
+} else {
+button.classList.add("disliked");
+count++;
+}
+
+countElement.textContent = count;
+}
+
+function addComment(button) {
+var joke = button.parentElement.parentElement;
+var commentInput = joke.querySelector(".comment-input");
+var comment = commentInput.value.trim();
+
+if (comment !== "") {
+var commentContainer = document.createElement("div");
+commentContainer.classList.add("comment-container");
+commentContainer.textContent = comment;
+
+var commentsContainer = joke.querySelector(".comments-container");
+commentsContainer.appendChild(commentContainer);
+
+commentInput.value = "";
+}
+}
+
+
+</script>
+
+
+
+ </div>
+<br>
+
+
+  <div id="contact" class="section" style="background-image: url(https://cdn.dribbble.com/users/1770290/screenshots/6171169/bg_78.gif );background-repeat: no-repeat; background-size: cover;" >
+    <h1>Welcome to the  German Section </h1>
+    <!-- Content for the Contact section goes here -->
+    <div id="german-container"></div>
+<script>
+const gergame =[
+"Warum ist die Banane krumm? Weil sie nicht geradeaus gewachsen ist!",
+  "Was macht ein Clown im Büro? Faxen.",
+  "Warum sitzen in der Kirche so viele Menschen? Weil sie sich nicht mehr streiten wollen.",
+  "Was sagt ein Keks, wenn es aus dem Ofen kommt? Uff, ist das heiß hier drin!",
+  "Warum nimmt ein Taucher immer einen Fallschirm mit? Damit er nicht klatschnass landet.",
+  "Warum haben Seeräuber immer ein Steuerrad in der Hose? Weil es so schön krätscht!",
+  "Was macht ein Frosch, wenn er genervt ist? Er steigt aus dem Teich und geht quak."
+
+
+];
+
+// Function to display a random joke
+function displaygergame() {
+  const germanContainer = document.getElementById('german-container');
+  const randomIndex = Math.floor(Math.random() * gergame.length);
+  const randomgergame = gergame[randomIndex];
+
+  germanContainer.textContent = randomgergame;
+}
+
+// Display a random joke initially
+displaygergame();
+
+
+</script>
+
+ <!--like dislike comment section-->
+
+ <div class="rating-buttons" style="display: flex; margin-top: 12px;">
+  <button class="like-button" onclick="toggleLike(this)">
+    <img src="like.png" alt="Like" class="like-icon"  style="height: auto;">
+    <span class="like-count">0</span>
+  </button> 
+  <button class="dislike-button" onclick="toggleDislike(this)">
+    <img src="dislike.png" alt="Dislike" class="dislike-icon" style="height:auto ;">
+    <span class="dislike-count">0</span>
+  </button>
+
+</div>
+<div class="comment-section" style="margin-left: 33px;">
+  <input type="text" class="comment-input" placeholder="Add a comment...">
+  <button class="comment-button" onclick="addComment(this)">
+    Add Comment
+  </button>
+  <div class="comments-container">
+    <!-- Comments will be dynamically added here -->
+  </div>
+</div>
+</div>
+
+<script>
+function toggleLike(button) {
+var countElement = button.querySelector(".like-count");
+var count = parseInt(countElement.textContent);
+
+if (button.classList.contains("liked")) {
+button.classList.remove("liked");
+count--;
+} else {
+button.classList.add("liked");
+count++;
+}
+
+countElement.textContent = count;
+}
+
+function toggleDislike(button) {
+var countElement = button.querySelector(".dislike-count");
+var count = parseInt(countElement.textContent);
+
+if (button.classList.contains("disliked")) {
+button.classList.remove("disliked");
+count--;
+} else {
+button.classList.add("disliked");
+count++;
+}
+
+countElement.textContent = count;
+}
+
+function addComment(button) {
+var joke = button.parentElement.parentElement;
+var commentInput = joke.querySelector(".comment-input");
+var comment = commentInput.value.trim();
+
+if (comment !== "") {
+var commentContainer = document.createElement("div");
+commentContainer.classList.add("comment-container");
+commentContainer.textContent = comment;
+
+var commentsContainer = joke.querySelector(".comments-container");
+commentsContainer.appendChild(commentContainer);
+
+commentInput.value = "";
+}
+}
+
+
+</script>
+
+
+
+  </div>
+<br>
+  <div id="feedback" class="section"  style="background-image: url(https://66.media.tumblr.com/9f6165836021a6202365292971175bb3/tumblr_pigf22vGrn1uzwgsuo1_400.gif );background-repeat: no-repeat; background-size: cover;">
+    <h1>Welcome to the Japanese Section</h1>
+    <!-- Content for the Home section goes here -->
+    <div id="japanese-container"></div>
+<script>
+      const japgame = [
+    "雪が降る前にどこへ行けばいいですか？(Where should you go before it snows?)",
+    "ウサギがドアを開ける音はなんですか？( What sound does a rabbit make when opening a door?)",
+    "ハチのおしりには何がありますか？( What is on the bee's bottom?)",
+    "イルカがすきな飲み物は何ですか？( What is a dolphin's favorite drink?)",
+    "タイムマシンを作るために何が必要ですか？(What do you need to make a time machine?)",
+    " 猫が一番好きなテレビ番組は何ですか？(What is a cat's favorite TV show?)."
+     ];
+
+
+// Function to display a random joke
+function displayjapgame() {
+  const japaneseContainer = document.getElementById('japanese-container');
+  const randomIndex = Math.floor(Math.random() * japgame.length);
+  const randomjapgame = japgame[randomIndex];
+
+  japaneseContainer.textContent = randomjapgame;
+}
+
+// Display a random joke initially
+displayjapgame();
+
+
+  </script>
+
+ <!--like dislike comment section-->
+
+ <div class="rating-buttons" style="display: flex; margin-top: 12px;">
+  <button class="like-button" onclick="toggleLike(this)">
+    <img src="like.png" alt="Like" class="like-icon"  style="height: auto;">
+    <span class="like-count">0</span>
+  </button> 
+  <button class="dislike-button" onclick="toggleDislike(this)">
+    <img src="dislike.png" alt="Dislike" class="dislike-icon" style="height:auto ;">
+    <span class="dislike-count">0</span>
+  </button>
+
+</div>
+<div class="comment-section" style="margin-left: 33px;">
+  <input type="text" class="comment-input" placeholder="Add a comment...">
+  <button class="comment-button" onclick="addComment(this)">
+    Add Comment
+  </button>
+  <div class="comments-container">
+    <!-- Comments will be dynamically added here -->
+  </div>
+</div>
+</div>
+
+<script>
+function toggleLike(button) {
+var countElement = button.querySelector(".like-count");
+var count = parseInt(countElement.textContent);
+
+if (button.classList.contains("liked")) {
+button.classList.remove("liked");
+count--;
+} else {
+button.classList.add("liked");
+count++;
+}
+
+countElement.textContent = count;
+}
+
+function toggleDislike(button) {
+var countElement = button.querySelector(".dislike-count");
+var count = parseInt(countElement.textContent);
+
+if (button.classList.contains("disliked")) {
+button.classList.remove("disliked");
+count--;
+} else {
+button.classList.add("disliked");
+count++;
+}
+
+countElement.textContent = count;
+}
+
+function addComment(button) {
+var joke = button.parentElement.parentElement;
+var commentInput = joke.querySelector(".comment-input");
+var comment = commentInput.value.trim();
+
+if (comment !== "") {
+var commentContainer = document.createElement("div");
+commentContainer.classList.add("comment-container");
+commentContainer.textContent = comment;
+
+var commentsContainer = joke.querySelector(".comments-container");
+commentsContainer.appendChild(commentContainer);
+
+commentInput.value = "";
+}
+}
+
+
+</script>
+
+
+
+
+
+
+ </div>
+<br>
+
+
+ <div id="rate" class="section" style="background-image: url(https://cdn.dribbble.com/users/1770290/screenshots/6142201/bg_73.gif );background-repeat: no-repeat; background-size: cover;" >
+    <h1>Welcome to the Chinese Section</h1>
+    <!-- Content for the Home section goes here -->
+    <div id="chinese-container"></div>
+<script>
+      const chigame = [
+    "为什么有的人很瘦，却能吃很多？因为他们都是吃货。(Why do some people stay thin even though they eat a lot? Because they are all foodies.) ",
+    "为什么女生不喜欢数学？因为数学把X抢走了。(Why don't girls like math? Because math took away X.) ",
+    "为什么猫咪喜欢玩钢琴？因为它们喜欢操控键盘。(Why do cats like playing the piano? Because they like to control the keyboard.)  ",
+    "为什么狗永远摆不出吊儿郎当的样子？因为它们总是面带微笑。( Why can't dogs ever look careless? Because they always have a smile on their face.) ",
+    "小明：我以前总是喜欢挠墙，可是现在不了。小华：为什么？小明：因为墙给我挠回去了。(Xiao Ming: I used to like scratching the wall, but not anymore. Xiao Hua: Why? Xiao Ming: Because the wall scratched me back.) ",
+    "小明：你知道为什么火车是会说话的吗？小华：为什么？小明：因为它们有“咚咚”声。(Xiao Ming: Do you know why trains can talk? Xiao Hua: Why? Xiao Ming: Because they make a chug-chug sound.).  "
+     ];
+
+
+// Function to display a random joke
+function displaychigame() {
+  const chineseContainer = document.getElementById('chinese-container');
+  const randomIndex = Math.floor(Math.random() * chigame.length);
+  const randomchigame = chigame[randomIndex];
+
+  chineseContainer.textContent = randomchigame;
+}
+
+// Display a random joke initially
+displaychigame();
+
+
+  </script>
+ <!--like dislike comment section-->
+
+ <div class="rating-buttons" style="display: flex; margin-top: 12px;">
+  <button class="like-button" onclick="toggleLike(this)">
+    <img src="like.png" alt="Like" class="like-icon"  style="height: auto;">
+    <span class="like-count">0</span>
+  </button> 
+  <button class="dislike-button" onclick="toggleDislike(this)">
+    <img src="dislike.png" alt="Dislike" class="dislike-icon" style="height:auto ;">
+    <span class="dislike-count">0</span>
+  </button>
+
+</div>
+<div class="comment-section" style="margin-left: 33px;">
+  <input type="text" class="comment-input" placeholder="Add a comment...">
+  <button class="comment-button" onclick="addComment(this)">
+    Add Comment
+  </button>
+  <div class="comments-container">
+    <!-- Comments will be dynamically added here -->
+  </div>
+</div>
+</div>
+
+<script>
+function toggleLike(button) {
+var countElement = button.querySelector(".like-count");
+var count = parseInt(countElement.textContent);
+
+if (button.classList.contains("liked")) {
+button.classList.remove("liked");
+count--;
+} else {
+button.classList.add("liked");
+count++;
+}
+
+countElement.textContent = count;
+}
+
+function toggleDislike(button) {
+var countElement = button.querySelector(".dislike-count");
+var count = parseInt(countElement.textContent);
+
+if (button.classList.contains("disliked")) {
+button.classList.remove("disliked");
+count--;
+} else {
+button.classList.add("disliked");
+count++;
+}
+
+countElement.textContent = count;
+}
+
+function addComment(button) {
+var joke = button.parentElement.parentElement;
+var commentInput = joke.querySelector(".comment-input");
+var comment = commentInput.value.trim();
+
+if (comment !== "") {
+var commentContainer = document.createElement("div");
+commentContainer.classList.add("comment-container");
+commentContainer.textContent = comment;
+
+var commentsContainer = joke.querySelector(".comments-container");
+commentsContainer.appendChild(commentContainer);
+
+commentInput.value = "";
+}
+}
+
+
+</script>
+
+
+
+
+ </div>
+
+ 
+
+
+ <script>
+window.addEventListener('DOMContentLoaded', (event) => {
+  // Get all the navigation links
+  const navLinks = document.querySelectorAll('nav a');
+
+  // Add click event listener to each navigation link
+  navLinks.forEach((link) => {
+    link.addEventListener('click', (event) => {
+      event.preventDefault();
+
+      // Get the target section based on the link's href attribute
+      const targetSection = document.querySelector(link.getAttribute('href'));
+
+      // Scroll smoothly to the target section
+      targetSection.scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+});
+
+
+ </script>
+
+<br>
+<footer>
+  <div class="footer-content">
+    <div class="footer-logo">
+      <img src="your-logo.png" alt="Your Logo">
+    </div>
+    <div class="footer-links">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="footer-social"  >
+      <a href="#" target="_blank"><img src="facebook-icon.png " alt="Facebook"></a>
+      <a href="#" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
+      <a href="#" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy;  Made by Adi</p>
+  </div>
+</footer>
+
+
+
+
+
+</body>
+</html>
